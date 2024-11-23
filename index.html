@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16" />
+    <link rel="stylesheet" href="./fonts/font.css">
+    <title>Blinix Solution</title>
+</head>
+
+<body>
+    <!-- ===================================
+            NavBar-offcanvas-section-start
+    ==================================== -->
+
+    <div class="offcanvas" id="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <ul class="ul-off">
+            <li class="li-nav"><a href="" class="a-nav">Comptabilité</a></li>
+            <li class="li-nav"><a href="" class="a-nav">Créer mon entreprise</a></li>
+            <li class="li-nav"><a href="" class="a-nav">Notre appli</a></li>
+            <li class="li-nav"><a href="" class="a-nav">Tarifs</a></li>
+            <li class="li-nav"><a href="" class="a-nav">Accès client</a></li>
+
+        </ul>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+
+    <!-- ===================================
+            NavBar--offcanvas-section-end
+    ==================================== -->
+    <!-- =============================
+     Pop-up Modal
+     ================================ -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-popup-btn" onclick="closePopup()">×</span>
+            <div class="nav-btn">
+                <div class=" primary-btn">
+                    <a href="" class="nav-btn-inr primary-btn-inr msg-otr"> <img src="./img/msg-ic.svg" class="msg"
+                            alt=""></a>
+                </div>
+                <div class=" primary-btn">
+                    <a href="" class="nav-btn-inr primary-btn-inr">06 99 10 75 73</a>
+                </div>
+                <div class=" primary-btn">
+                    <a href="" class="nav-btn-inr primary-btn-inr">Prendre rendez-vous</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================
+     Pop-up Modal-end
+     ================================ -->
+    <!-- ===================================
+            NavBar-section-start
+    ==================================== -->
+    <header class="NavBar">
+        <div class="navbar-up-otr">
+            <div class="navbar-up-inr">
+                <p class="up-del">Offre du mois : 3 mois de comptabilité offerte pour tout parrainage 🚀</p>
+                <div class="up-para">
+                    <img src="./img/navup-img.svg" alt="img" class="up-img">
+                    <p>Expert-comptable certifié 🇫🇷</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-down-otr">
+            <div class="navbar-down-inr">
+                <a href="" class="img-logo-otr">
+                    <img src="./img/navlogo.svg" alt="img" class="img-logo-inr">
+                </a>
+                <ul class="ul-nav">
+                    <li class="li-nav"><a href="" class="a-nav">Comptabilité</a></li>
+                    <li class="li-nav"><a href="" class="a-nav">Créer mon entreprise</a></li>
+                    <li class="li-nav"><a href="" class="a-nav">Notre appli</a></li>
+                    <li class="li-nav"><a href="" class="a-nav">Tarifs</a></li>
+                    <li class="li-nav"><a href="" class="a-nav">Accès client</a></li>
+
+                </ul>
+                <div class="nav-btn">
+                    <div class="nav-btn-otr primary-btn">
+                        <a href="" class="nav-btn-inr primary-btn-inr msg-otr"> <img src="./img/msg-ic.svg" class="msg"
+                                alt=""></a>
+                    </div>
+                    <div class="nav-btn-otr primary-btn">
+                        <a href="" class="nav-btn-inr primary-btn-inr">06 99 10 75 73</a>
+                    </div>
+                    <div class="nav-btn-otr primary-btn">
+                        <a href="" class="nav-btn-inr primary-btn-inr">Prendre rendez-vous</a>
+                    </div>
+                    <div class="nav-bt">
+                        <button class="info" onclick="openPopup()"> <img src="./img/in.svg" class="msg" alt=""></button>
+                    </div>
+                    <button class="off-btn" onclick="openSidebar()"><img src="./img/burg.svg" alt=""></button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===================================
+            NavBar-section-end
+    ==================================== -->
+    <!-- ===================================
+            Hero-section-start
+    ==================================== -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="row row-hero">
+                <div class="hero-detail-otr">
+                    <div class="hero-detail-inr">
+                        <p class="heroheading h1">🚀 Comptaways,<br />
+                            l’expert comptable <span class="heroheadingspan">en ligne</span> pour <span
+                                class="heroheadingspan2">indépendants et TPE</span></p>
+                        <p class="hero-para p">Créez votre entreprise gratuitement et démarrez.</p>
+                        <p class="hero-para2 p">Un comptable spécialisé vous accompagne et vous conseille pour le
+                            développement de votre activité. Comptaways est un cabinet (d'expertise-comptable) en ligne
+                            inscrit à l'Ordre des Experts-Comptables.</p>
+                        <div class="hero-btn">
+                            <div class="hero-btn-otr primary-btn">
+                                <a href="" class="her-btn-inr primary-btn-inr">Devis comptabilité instantané !</a>
+                            </div>
+                            <div class="hero-btn-otr primary-btn">
+                                <a href="" class="her-btn-inr primary-btn-inr">Création offerte !</a>
+                            </div>
+                        </div>
+                        <p class="hero-para3 p">Appelez-nous au 06 99 10 75 73 ou prenez rendez-vous sans attendre !</p>
+                        <img src="/img/herob.svg" class="hero-btn-btm" alt="img">
+                    </div>
+                </div>
+                <div class="hero-img-otr">
+                    <img src="/img/hero-img.svg" alt="img" class="hero-img-inr">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            Hero-section-start
+    ==================================== -->
+    <!-- ===================================
+            Box-section-start
+    ==================================== -->
+    <section class="box-section">
+        <div class="container-box">
+            <h2 class="MainHeading-box h2">🤝️‍ Un démarrage en <span class="MainHeading-boxSpan"> toute sérénité</span>
+            </h2>
+            <div class="row-box row">
+                <div class="box-otr">
+                    <div class="box-inr">
+                        <div class="box-numOtr">
+                            <p class="box-numInr box-numInr-1">1</p>
+                        </div>
+                        <p class="box-heading h4">Connectez vos comptes<br />
+                            et laissez vous guider</p>
+                        <p class="box-detail p">Notre application se synchronise
+                            gratuitement à votre compte bancaire professionnel
+                            en toute sécurité. Pilotez votre entreprise grâce à vos indicateurs en temps réel !
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="box-otr">
+                    <div class="box-inr">
+                        <div class="box-numOtr">
+                            <p class="box-numInr box-numInr-2">2</p>
+                        </div>
+                        <p class="box-heading h4">Nos experts-comptables
+                            vous conseillent</p>
+
+                        <p class="box-detail p">Nos experts-comptables répondent à vos interrogations. Ils vous
+                            conseillent sur l'optimisation de votre activité.<br />
+                            Votre conseiller comptable dédié s'occupe de vos déclarations (TVA...).</p>
+
+                    </div>
+                </div>
+
+                <div class="box-otr">
+                    <div class="box-inr">
+                        <div class="box-numOtr">
+                            <p class="box-numInr box-numInr-3">3</p>
+                        </div>
+                        <p class="box-heading h4">Obtenez rapidement votre bilan certifié par un de nos
+                            expert-comptables</p>
+
+                        <p class="box-detail p">Votre bilan est certifié par un expert-comptable membre de l'ordre.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="primary-btn box-btn-otr">
+                <a href="#" class="primary-btn-inr box-btn">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            Box-section-end
+    ==================================== -->
+    <!-- ======================================
+        business-section-start
+    ==================================== -->
+    <section class="business">
+        <div class="business-container">
+            <div class="row row-business">
+                <div class="img-otr-business">
+                    <img src="/img/bus1.svg" alt="img" class="img-inr-business">
+                </div>
+                <div class="business-detail">
+                    <div class="business-detail-inr">
+                        <p class="business-heading h2">✍️ Une offre <span class="business-headingsp">sans
+                                engagement</span>
+                            <br />adaptée à votre activité
+                        </p>
+                        <div class="btn-business">
+                            <div class="businessBtn-otr primary-btn">
+                                <a href="" class="businessBtn-inr primary-btn-inr1">Indépendant</a>
+                            </div>
+                            <div class="businessBtn-otr primary-btn">
+                                <a href="" class="businessBtn-inr primary-btn-inr1">Petite entreprise ou entreprise</a>
+                            </div>
+                            <div class="businessBtn-otr primary-btn">
+                                <a href="" class="businessBtn-inr primary-btn-inr1">Création</a>
+                            </div>
+                        </div>
+                        <p class="spa">Offre la plus choisie <img src="./img/bsp.svg" alt=""></p>
+                        <div class="business-box">
+                            <p class="rs ">Dès <span class="rs1 ">45€</span> HT / Mois</p>
+                            <p class="busRs-headind">Offre Small</p>
+                            <p class="busRs-para p">Un Expert-Comptable Comptaways vous accompagne dans l'accompagnement
+                                de votre entreprise individuelle avec un accès à notre application pro.
+                            </p>
+                            <p class="underline p"><span class="underlinespan">Inclus dans l’offre</span></p>
+                            <ul class="ul-partner-business">
+                                <li class="li-partner-business">
+                                    <img src="./img/tickblue.svg" alt="">
+                                    <p class="li-para1 h5">Création de votre entreprise incluse</p>
+                                </li>
+                                <li class="li-partner-business">
+                                    <img src="./img/tickblue.svg" alt="">
+                                    <p class="li-para1 h5">Application comptable offerte</p>
+                                </li>
+                                <li class="li-partner-business">
+                                    <img src="./img/tickblue.svg" alt="">
+                                    <p class="li-para1 h5">Module de facturation</p>
+                                </li>
+                            </ul>
+                            <div class="link-otr">
+                                <a href="" class="link-inr5 p"><span class="bord-btm">Consulter l’offre en détail</span>
+                                    <img src="./img/Arrow 1.svg" class="link-img" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-otr-business">
+                    <img src="/img/bus2.svg" alt="img" class="img-inr-business">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================
+        business-section-end
+    ==================================== -->
+    <!-- ======================================
+        accompagné-section-start
+    ==================================== -->
+    <section class="accompagne">
+        <div class="accompagne-container">
+            <div class="row row-accompagne">
+                <div class="accompagneImg-otr">
+                    <img src="./img/accompagne-img.svg" class="accompagneImg-inr" alt="img">
+                </div>
+                <div class="accompagne-detail">
+                    <p class="accompagne-heading h2">🤝 Vous êtes <span class="accompagne-headingSpan">accompagné</span>
+                        par nos équipes</p>
+                    <p class="accompagne-head h4">La compta devient simple</p>
+                    <p class="accompagne-para p">Tout au long de l'année vous pouvez contacter votre conseiller dédié
+                        (Léa, Morgane, Omar...) qui vous répondra.</p>
+                    <div class="btn-accompagne primary-btn">
+                        <a href="" class="primary-btn-inr btn-accompagne-inr">Demander mon devis !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================
+        accompagné-section-end
+    ==================================== -->
+    <!-- ======= ====================
+    partner-software-section-start
+    =============================== -->
+    <section class="partner-software">
+        <div class="partner-software-container">
+            <div class="row partner-software-row">
+                <div class="partner-software-detailOtr">
+                    <p class="partner-software-heading h2">💻 Découvrez le fonctionnement
+                        de notre <span class="partner-software-headSpan">logiciel partenaire</span> </p>
+                    <p class="partner-software-detail p">Connectez vous simplement à votre application.<br /> Vous avez
+                        accès à votre compta bancaire, découvrez les fonctionalités pratiques :</p>
+                    <ul class="ul-partner-software">
+                        <li class="li-partner-software">
+                            <img src="./img/tick.svg" alt="">
+                            <p class="li-para h5">Module de facturation et de relance clients.</p>
+                        </li>
+                        <li class="li-partner-software">
+                            <img src="./img/tick.svg" alt="">
+                            <p class="li-para h5">Vos indicateurs clés. (Graphiques de trésorerie, Création de
+                                graphiques personnalisés illimité)</p>
+                        </li>
+                        <li class="li-partner-software">
+                            <img src="./img/tick.svg" alt="">
+                            <p class="li-para h5">Synchronisation bancaire</p>
+                        </li>
+                        <li class="li-partner-software">
+                            <img src="./img/tick.svg" alt="">
+                            <p class="li-para h5">Collecte des achats.</p>
+                        </li>
+                        <li class="li-partner-software">
+                            <img src="./img/tick.svg" alt="">
+                            <p class="li-para h5">Bénéficiez de la valeur probante</p>
+                        </li>
+                    </ul>
+                    <div class="link-otr">
+                        <a href="" class="link-inr p">Et plus encore !
+                            <img src="./img/Arrow 1.svg" class="link-img" alt="img">
+                        </a>
+                    </div>
+                    <div class="mail-otr">
+                        <input type="text" placeholder="Entrez votre adresse mail" class="mail-input">
+                        <div class="btn-mail primary-btn">
+                            <a href="" class="primary-btn-inr btn-mail-inr">Je souscris maintenant !</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-software-imgOtr">
+                    <img src="./img/mail-pic.svg" alt="img" class="partner-software-imginr">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= ====================
+    partner-software-section-end'
+    =============================== -->
+    <!-- ======= ====================
+    Our-vision-section-start
+    =============================== -->
+    <section class="Our-vision">
+        <div class="Our-vision-container">
+            <div class="row Our-vision-row">
+                <div class="entrepreneurs-otr">
+                    <div class="entrepreneurs-inr">
+                        <p class="entrepreneurs-heading h2">🎉 De nombreux entrepreneurs comme vous <span
+                                class="entrepreneurs-heading-span">rejoignent</span>
+                            Comptaways</p>
+                        <p class="entrepreneurs-detail p">Aujourd'hui, l'entrepreneur a besoin d'être accompagné. Avec
+                            Comptaways vous ne renoncez pas au conseil en choisissant un cabinet en ligne. Nous faisons
+                            les deux.<br />Contactez-nous. Discutons de votre projet.</p>
+                    </div>
+                </div>
+                <div class="Our-vision-otr">
+                    <img src="./img/vision-img.svg" class="Our-vision-inr" alt="img">
+                </div>
+                <div class="vision-otr">
+                    <div class="vision-inr">
+                        <p class="vision-head h4">Notre vision</p>
+                        <div class="vision-detail-otr">
+                            <div class="vision-detail-inr">
+                                <div class="vision-img-otr">
+                                    <img src="./img/vision11.svg" class="vision-detail-img" alt="img">
+                                </div>
+                                <p class="vision-detail-para p">Nous nous engageons à rendre la comptabilité simple pour
+                                    les
+                                    entrepreneurs.</p>
+                            </div>
+
+                            <div class="vision-detail-inr">
+                                <div class="vision-img-otr">
+                                    <img src="./img/vision2.svg" class="vision-detail-img" alt="img">
+                                </div>
+                                <p class="vision-detail-para p">Comptaways est un service 100% en ligne, 100% digital,
+                                    100% eco friendly</p>
+                            </div>
+                            <div class="vision-detail-inr">
+                                <div class="vision-img-otr">
+                                    <img src="./img/vision3.svg" class="vision-detail-img" alt="img">
+                                </div>
+                                <p class="vision-detail-para p">Nous nous engageons à proposer toujours les solutions
+                                    les plus innovantes et à vous faire gagner du temps en simplifiant la comptabilité
+                                    et l'administratif.</p>
+                            </div>
+
+                            <div class="vision-detail-inr">
+                                <div class="vision-img-otr">
+                                    <img src="./img/vision4.svg" class="vision-detail-img" alt="">
+                                </div>
+                                <p class="vision-detail-para p">Nous ne négligeons pas l'accompagnement du client car sa
+                                    satisfaction reste notre priorité.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= ====================
+    Our-vision-section-end
+    =============================== -->
+    <!-- ======= ====================
+    Our-customers-section-start
+    =============================== -->
+    <section class="customers">
+        <div class="customers-container">
+            <div class="customers-row">
+                <div class="customers-heading h2">🌟 Les avis de <span class="customers-headingspan">nos clients</span>
+                </div>
+
+                <div class="main-slid">
+                    <div class="custom-swiper">
+                        <div class="custom-swiper-wrapper">
+                            <div class="custom-swiper-slide">
+                                <div class="swiper-box-tr">
+                                    <div class="swiper-box-inr">
+                                        <p class="swiper-head h4">Gwenaëlle</p>
+                                        <p class="syl">Concessionnaire auto</p>
+                                        <p class="swiper-del p">Comptaways est un cabinet comptable sachant répondre à
+                                            chaque attente de son client. Je recommande fortement de faire confiance à
+                                            CE professionnel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-swiper-slide">
+                                <div class="swiper-box-tr">
+                                    <div class="swiper-box-inr">
+                                        <p class="swiper-head h4">Catherine</p>
+                                        <p class="syl syl2">Avocate</p>
+                                        <p class="swiper-del p">J'ai confié le suivi comptable de mon entreprise à
+                                            Comptaways et suis entièrement satisfaite. Les déclarations sont faites sans
+                                            retard. J'ai une vision grâce à leur tableau de bord de la trésorerie,
+                                            facturation, charges diverses. C'est clair, précis, efficace et à l'heure.
+                                            Je recommande vivement. Et en plus ils sont agréables !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-swiper-slide">
+                                <div class="swiper-box-tr">
+                                    <div class="swiper-box-inr">
+                                        <p class="swiper-head h4">Rémi</p>
+                                        <p class="syl syl3">Chef cuisinier</p>
+                                        <p class="swiper-del p">Comptaways vous accompagne dans tous les aspects
+                                            comptables de votre société. La présentation d’outils d’analyse est une aide
+                                            précieuse pour le pilotage et l’arbitrage d’investissement de votre
+                                            activité. Forte expertise, je vous le recommande !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-swiper-slide">
+                                <div class="swiper-box-tr">
+                                    <div class="swiper-box-inr">
+                                        <p class="swiper-head h4">Gwenaëlle</p>
+                                        <p class="syl">Concessionnaire auto</p>
+                                        <p class="swiper-del p">Comptaways est un cabinet comptable sachant répondre à
+                                            chaque attente de son client. Je recommande fortement de faire confiance à
+                                            CE professionnel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-swiper-slide">
+                                <div class="swiper-box-tr">
+                                    <div class="swiper-box-inr">
+                                        <p class="swiper-head h4">Catherine</p>
+                                        <p class="syl syl2">Avocate</p>
+                                        <p class="swiper-del p">J'ai confié le suivi comptable de mon entreprise à
+                                            Comptaways et suis entièrement satisfaite. Les déclarations sont faites sans
+                                            retard. J'ai une vision grâce à leur tableau de bord de la trésorerie,
+                                            facturation, charges diverses. C'est clair, précis, efficace et à l'heure.
+                                            Je recommande vivement. Et en plus ils sont agréables !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-swiper-slide">
+                                <div class="swiper-box-tr">
+                                    <div class="swiper-box-inr">
+                                        <p class="swiper-head h4">Rémi</p>
+                                        <p class="syl syl3">Chef cuisinier</p>
+                                        <p class="swiper-del p">Comptaways vous accompagne dans tous les aspects
+                                            comptables de votre société. La présentation d’outils d’analyse est une aide
+                                            précieuse pour le pilotage et l’arbitrage d’investissement de votre
+                                            activité. Forte expertise, je vous le recommande !</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swip-btn">
+                        <button class="custom-swiper-button custom-swiper-button-prev"><img src="./img/right.svg"
+                                alt=""></button>
+                        <button class="custom-swiper-button custom-swiper-button-next"><img src="./img/left.svg"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= ====================
+    Our-customers-section-end
+    =============================== -->
+    <!-- ======= ====================
+    partner banks-section-start
+    =============================== -->
+    <section class="partner-banks">
+        <div class="partner-container">
+            <div class="partner-wrapper">
+                <p class="partner-heading h2">👉 Nos <span class="partner-heading-span">banques</span> partenaires</p>
+                <p class="detail-partner p">Notre application se connecte à toutes les banques les plus courantes.<br />
+                    Vos flux bancaires remontent automatiquement sur notre application.</p>
+            </div>
+            <div class="partner-row row">
+                <div class="partner-logo-otr">
+                    <img src="./img/image 1.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image 2.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image 3.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image4.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image5.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image6.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image7.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image8.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image9.svg" alt="" class="partner-logo-inr">
+                </div>
+                <div class="partner-logo-otr">
+                    <img src="./img/image10.svg" alt="" class="partner-logo-inr">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= ====================
+    partner banks-section-end
+    =============================== -->
+    <!-- ======= ====================
+    contact-section-start
+    =============================== -->
+    <section class="contact">
+        <div class="conatact-container">
+            <div class="row contact-row">
+                <div class="conatct-img-otr">
+                    <img src="./img/form-img.svg" alt="" class="contact-img-inr">
+                </div>
+                <div class="form-otr">
+                    <p class="form-heading h2">💬 Discutons de <span class="form-heading-span">votre projet</span></p>
+                    <p class="form-detail p">Nous accompagnons tous secteurs d'activité (actuellement près de 60
+                        secteurs différents). Nous serons ravis d'échanger avec vous sur votre projet. Nous vous
+                        accompagnerons pour votre réussite.</p>
+                    <form action="" class="form-otr1">
+                        <div class="form-inr">
+                            <input type="text" placeholder="Votre nom" class="input-cl">
+                            <input type="text" placeholder="Votre prénom" class="input-cl">
+
+                        </div>
+                        <div class="form-inr">
+                            <input type="text" placeholder="Votre n° de téléphone" class="input-cl">
+                            <input type="text" placeholder="Votre adresse email" class="input-cl">
+
+                        </div>
+                        <div>
+
+                            <textarea name="" rows="9" placeholder="Votre message" class="textarea" id=""></textarea>
+                        </div>
+                        <div class="contact-btn-otr primary-btn">
+                            <a href="" class="contact-btn-inr primary-btn-inr">Envoyer mon message !</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= ====================
+    contact-section-end
+    =============================== -->
+    <!-- ======= ====================
+    Footer-section-start
+    =============================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row row">
+                <div class="logo-detail">
+                    <div class="footer-logoOtr">
+                        <div class="footer-logoInr"><img src="./img/footerlogo.svg" alt=""></div>
+                        <p class="footer-head p">Comptaways est un cabinet inscrit à l’Ordre des Experts comptables 100
+                            % en ligne.</p>
+                    </div>
+                    <div class="footerUlLi">
+                        <p class="ul-head h5">Notre site</p>
+                        <ul class="ul-footer">
+                            <li class="li-footer"><a href="" class="a-footer p">Comptabilité</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Créer mon entreprise</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Notre appli</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Tarifs</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Accès client</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerUlLi">
+                        <p class="ul-head h5">Pages légales</p>
+                        <ul class="ul-footer">
+                            <li class="li-footer"><a href="" class="a-footer p">Mentions légales</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerUlLi">
+                        <p class="ul-head h5">Nous suivre</p>
+                        <ul class="ul-footer">
+                            <li class="li-footer"><a href="" class="a-footer p">Facebook</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Instagram</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerUlLi">
+                        <p class="ul-head h5">Aide & Service client</p>
+                        <ul class="ul-footer">
+                            <li class="li-footer"><a href="" class="a-footer p">06 99 10 75 73</a></li>
+                            <li class="li-footer"><a href="" class="a-footer p">aide@comptaways.fr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="lower-para">Made with 💚 by 4Beez - Agence de communication</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= ====================
+    Footer-section-end
+    =============================== -->
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

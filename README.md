@@ -47,11 +47,7 @@ The project leverages the latest tools for optimal performance and scalability:
 
 ---
 
-🌐 **Live Demo**  
-Explore the platform live:  
-**[Live Demo Link](https://expertcomputersolutions.com)**  
-
----
+ 
 
 📦 **Getting Started**  
 1. **Clone the Repository**:  
